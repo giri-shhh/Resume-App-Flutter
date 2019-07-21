@@ -129,8 +129,11 @@ class ProfileMainWidget extends StatelessWidget {
               ),
             )
           ],
-          gradient: new LinearGradient(
-              colors: <Color>[Colors.deepOrange[400], Colors.deepOrange[300], Colors.deepOrange[200]]),
+          gradient: new LinearGradient(colors: <Color>[
+            Colors.deepOrange[400],
+            Colors.deepOrange[300],
+            Colors.deepOrange[200]
+          ]),
           borderRadius: new BorderRadius.all(Radius.circular(10))),
       height: 270,
       padding: EdgeInsets.all(10),
