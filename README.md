@@ -1,4 +1,4 @@
-# resume_girisha
+# Resume Flutter App
 
 A new Flutter project.
 
