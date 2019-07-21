@@ -34,7 +34,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   static List<Widget> _widgetOptions = <Widget>[
     Awards(),
     Text(
-      'Index 1: Business',
+      'Project Details : TBD',
       style: optionStyle,
     ),
     CareerMain(),

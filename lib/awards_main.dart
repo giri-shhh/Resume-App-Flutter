@@ -24,19 +24,23 @@ class Awards extends StatelessWidget {
             ),
             padding: EdgeInsets.only(top: 10, bottom: 10, left: 5),
           ),
-          Container(
-            padding: EdgeInsets.all(5),
-            child: SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: <Widget>[
-                  _buildCardWidet('assets/oracle.png', 'OCA SE 7', '2017'),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  _buildCardWidet('assets/androidN.png', 'Android N', '2018'),
-                ],
-              ),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: <Widget>[
+                _buildCardWidet('assets/oracle.png', 'OCA SE 7', '2017',
+                    Colors.deepOrange[100]),
+                SizedBox(
+                  width: 10,
+                ),
+                _buildCardWidet('assets/androidN.png', 'Android N', '2018',
+                    Colors.deepPurple[100]),
+                SizedBox(
+                  width: 10,
+                ),
+                _buildCardWidet(
+                    'assets/flutter.png', 'Flutter', '2019', Colors.cyan[100]),
+              ],
             ),
           ),
           Container(
@@ -53,21 +57,23 @@ class Awards extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             child: Row(
               children: <Widget>[
-                _buildCardWidet(
-                    'assets/counterStrike.png', 'Counter Strike', '1st Place'),
+                _buildCardWidet('assets/counterStrike.png', 'Counter Strike',
+                    '1st Place', Colors.pink[50]),
                 SizedBox(
                   width: 10,
                 ),
-                _buildCardWidet(
-                    'assets/shortMovie.png', 'Short Movie', '2nd Place'),
+                _buildCardWidet('assets/shortMovie.png', 'Short Movie',
+                    '2nd Place', Colors.teal[50]),
                 SizedBox(
                   width: 10,
                 ),
-                _buildCardWidet('assets/star.png', 'Star Of Month', '2019'),
+                _buildCardWidet('assets/star.png', 'Star Of Month', '2019',
+                    Colors.green[50]),
                 SizedBox(
                   width: 10,
                 ),
-                _buildCardWidet('assets/capgemini.ico', 'Training #1', '2018'),
+                _buildCardWidet('assets/capgemini.ico', 'Training #1', '2018',
+                    Colors.indigo[50]),
               ],
             ),
           ),
@@ -85,21 +91,23 @@ class Awards extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             child: Row(
               children: <Widget>[
-                _buildCardWidet(
-                    'assets/counterStrike.png', 'Counter Strike', '1st Place'),
+                _buildCardWidet('assets/counterStrike.png', 'Counter Strike',
+                    '1st Place', Colors.red[50]),
                 SizedBox(
                   width: 10,
                 ),
-                _buildCardWidet(
-                    'assets/shortMovie.png', 'Short Movie', '2nd Place'),
+                _buildCardWidet('assets/shortMovie.png', 'Short Movie',
+                    '2nd Place', Colors.lime[50]),
                 SizedBox(
                   width: 10,
                 ),
-                _buildCardWidet('assets/star.png', 'Star Of Month', '2019'),
+                _buildCardWidet('assets/star.png', 'Star Of Month', '2019',
+                    Colors.lightBlue[50]),
                 SizedBox(
                   width: 10,
                 ),
-                _buildCardWidet('assets/capgemini.ico', 'Training #1', '2018'),
+                _buildCardWidet('assets/capgemini.ico', 'Training #1', '2018',
+                    Colors.orange[50]),
               ],
             ),
           ),
@@ -108,14 +116,14 @@ class Awards extends StatelessWidget {
     );
   }
 
-  _buildCardWidet(image, title, year) {
+  _buildCardWidet(image, title, year, color) {
     return Container(
       height: 190,
       width: 120,
-      margin: EdgeInsets.only(top: 5, bottom: 5, left: 5, right: 7),
+      margin: EdgeInsets.only(top: 5, bottom: 5, right: 7),
       padding: EdgeInsets.all(10),
       decoration: new BoxDecoration(
-        color: Colors.white,
+        color: color,
         borderRadius: BorderRadius.circular(10.0),
         image: DecorationImage(
             alignment: Alignment(0, -0.75),
@@ -129,13 +137,14 @@ class Awards extends StatelessWidget {
           Container(
             child: Text(
               title,
-              style: TextStyle(color: Colors.black, fontSize: 18),
+              style:
+                  TextStyle(color: Colors.deepPurpleAccent[800], fontSize: 18),
             ),
           ),
           Container(
             child: Text(
               year,
-              style: TextStyle(color: Colors.black, fontSize: 18),
+              style: TextStyle(color: Colors.blueGrey[600], fontSize: 16),
             ),
           ),
         ],

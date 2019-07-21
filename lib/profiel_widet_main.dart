@@ -57,8 +57,11 @@ class ProfileMainWidget extends StatelessWidget {
     return Container(
         height: 250,
         decoration: new BoxDecoration(
-            gradient: new LinearGradient(
-                colors: <Color>[Colors.deepOrange[400], Colors.deepOrange[200]]),
+            gradient: new LinearGradient(colors: <Color>[
+              Colors.deepOrange[400],
+              Colors.deepOrange[300],
+              Colors.deepOrange[200]
+            ]),
             borderRadius: new BorderRadius.all(Radius.circular(10))),
         margin: EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: GridView.count(
@@ -90,8 +93,10 @@ class ProfileMainWidget extends StatelessWidget {
     return Container(
         height: 350,
         decoration: new BoxDecoration(
-            gradient: new LinearGradient(
-                colors: <Color>[Colors.deepOrange[300], Colors.deepOrange[200]]),
+            gradient: new LinearGradient(colors: <Color>[
+              Colors.deepOrange[300],
+              Colors.deepOrange[200]
+            ]),
             color: Colors.blueGrey[100],
             borderRadius: new BorderRadius.all(Radius.circular(10))),
         margin: EdgeInsets.only(left: 20, right: 20, bottom: 20),
@@ -125,7 +130,7 @@ class ProfileMainWidget extends StatelessWidget {
             )
           ],
           gradient: new LinearGradient(
-              colors: <Color>[Colors.deepOrange[400], Colors.deepOrange[600]]),
+              colors: <Color>[Colors.deepOrange[400], Colors.deepOrange[300], Colors.deepOrange[200]]),
           borderRadius: new BorderRadius.all(Radius.circular(10))),
       height: 270,
       padding: EdgeInsets.all(10),
