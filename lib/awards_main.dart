@@ -11,107 +11,110 @@ class Awards extends StatelessWidget {
       width: 500,
       margin: EdgeInsets.all(10),
       padding: EdgeInsets.only(top: 10, left: 10),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          Container(
-            child: Text(
-              'Certificates ',
-              style: TextStyle(
-                  color: Colors.deepOrange,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold),
+      child: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Container(
+              child: Text(
+                'Certificates ',
+                style: TextStyle(
+                    color: Colors.deepOrange,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold),
+              ),
+              padding: EdgeInsets.only(top: 10, bottom: 10, left: 5),
             ),
-            padding: EdgeInsets.only(top: 10, bottom: 10, left: 5),
-          ),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: <Widget>[
-                _buildCardWidet('assets/oracle.png', 'OCA SE 7', '2017',
-                    Colors.deepOrange[100]),
-                SizedBox(
-                  width: 10,
-                ),
-                _buildCardWidet('assets/androidN.png', 'Android N', '2018',
-                    Colors.deepPurple[100]),
-                SizedBox(
-                  width: 10,
-                ),
-                _buildCardWidet(
-                    'assets/flutter.png', 'Flutter', '2019', Colors.cyan[100]),
-              ],
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: <Widget>[
+                  _buildCardWidet('assets/oracle.png', 'OCA SE 7', '2017',
+                      Colors.deepOrange[100]),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  _buildCardWidet('assets/androidN.png', 'Android N', '2018',
+                      Colors.deepPurple[100]),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  _buildCardWidet('assets/flutter.png', 'Flutter', '2019',
+                      Colors.cyan[100]),
+                ],
+              ),
             ),
-          ),
-          Container(
-            child: Text(
-              'Awards ',
-              style: TextStyle(
-                  color: Colors.deepOrange,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold),
+            Container(
+              child: Text(
+                'Awards ',
+                style: TextStyle(
+                    color: Colors.deepOrange,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold),
+              ),
+              padding: EdgeInsets.only(top: 15, bottom: 15, left: 5),
             ),
-            padding: EdgeInsets.only(top: 15, bottom: 15, left: 5),
-          ),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: <Widget>[
-                _buildCardWidet('assets/counterStrike.png', 'Counter Strike',
-                    '1st Place', Colors.pink[50]),
-                SizedBox(
-                  width: 10,
-                ),
-                _buildCardWidet('assets/shortMovie.png', 'Short Movie',
-                    '2nd Place', Colors.teal[50]),
-                SizedBox(
-                  width: 10,
-                ),
-                _buildCardWidet('assets/star.png', 'Star Of Month', '2019',
-                    Colors.green[50]),
-                SizedBox(
-                  width: 10,
-                ),
-                _buildCardWidet('assets/capgemini.ico', 'Training #1', '2018',
-                    Colors.indigo[50]),
-              ],
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: <Widget>[
+                  _buildCardWidet('assets/counterStrike.png', 'Counter Strike',
+                      '1st Place', Colors.pink[50]),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  _buildCardWidet('assets/shortMovie.png', 'Short Movie',
+                      '2nd Place', Colors.teal[50]),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  _buildCardWidet('assets/star.png', 'Star Of Month', '2019',
+                      Colors.green[50]),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  _buildCardWidet('assets/capgemini.ico', 'Training #1', '2018',
+                      Colors.indigo[50]),
+                ],
+              ),
             ),
-          ),
-          Container(
-            child: Text(
-              'Co-Curricular Activities ',
-              style: TextStyle(
-                  color: Colors.deepOrange,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold),
+            Container(
+              child: Text(
+                'Co-Curricular Activities ',
+                style: TextStyle(
+                    color: Colors.deepOrange,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold),
+              ),
+              padding: EdgeInsets.only(top: 20, bottom: 15, left: 5),
             ),
-            padding: EdgeInsets.only(top: 20, bottom: 15, left: 5),
-          ),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: <Widget>[
-                _buildCardWidet('assets/counterStrike.png', 'Counter Strike',
-                    '1st Place', Colors.red[50]),
-                SizedBox(
-                  width: 10,
-                ),
-                _buildCardWidet('assets/shortMovie.png', 'Short Movie',
-                    '2nd Place', Colors.lime[50]),
-                SizedBox(
-                  width: 10,
-                ),
-                _buildCardWidet('assets/star.png', 'Star Of Month', '2019',
-                    Colors.lightBlue[50]),
-                SizedBox(
-                  width: 10,
-                ),
-                _buildCardWidet('assets/capgemini.ico', 'Training #1', '2018',
-                    Colors.orange[50]),
-              ],
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: <Widget>[
+                  _buildCardWidet('assets/counterStrike.png', 'Counter Strike',
+                      '1st Place', Colors.red[50]),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  _buildCardWidet('assets/shortMovie.png', 'Short Movie',
+                      '2nd Place', Colors.lime[50]),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  _buildCardWidet('assets/star.png', 'Star Of Month', '2019',
+                      Colors.lightBlue[50]),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  _buildCardWidet('assets/capgemini.ico', 'Training #1', '2018',
+                      Colors.orange[50]),
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

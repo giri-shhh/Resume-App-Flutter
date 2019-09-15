@@ -55,8 +55,19 @@ class ProfileMainWidget extends StatelessWidget {
 
   _buildHobbiesListWdget() {
     return Container(
-        height: 250,
+        height: 230,
         decoration: new BoxDecoration(
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey,
+                blurRadius: 10.0, // has the effect of softening the shadow
+                spreadRadius: 2.0, // has the effect of extending the shadow
+                offset: Offset(
+                  3.0, // horizontal, move right 10
+                  7.0, // vertical, move down 10
+                ),
+              )
+            ],
             gradient: new LinearGradient(colors: <Color>[
               Colors.deepOrange[400],
               Colors.deepOrange[300],
@@ -67,6 +78,7 @@ class ProfileMainWidget extends StatelessWidget {
         child: GridView.count(
           primary: true,
           shrinkWrap: true,
+          physics: NeverScrollableScrollPhysics(),
           crossAxisCount: 4,
           children: List.generate(6, (index) {
             return Container(
@@ -93,6 +105,17 @@ class ProfileMainWidget extends StatelessWidget {
     return Container(
         height: 350,
         decoration: new BoxDecoration(
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey,
+                blurRadius: 10.0, // has the effect of softening the shadow
+                spreadRadius: 2.0, // has the effect of extending the shadow
+                offset: Offset(
+                  3.0, // horizontal, move right 10
+                  7.0, // vertical, move down 10
+                ),
+              )
+            ],
             gradient: new LinearGradient(colors: <Color>[
               Colors.deepOrange[300],
               Colors.deepOrange[200]
@@ -102,6 +125,7 @@ class ProfileMainWidget extends StatelessWidget {
         margin: EdgeInsets.only(left: 20, right: 20, bottom: 20),
         child: GridView.count(
           childAspectRatio: 5,
+          physics: NeverScrollableScrollPhysics(),
           crossAxisCount: 2,
           children: List.generate(skils.length, (index) {
             return Container(
@@ -124,8 +148,8 @@ class ProfileMainWidget extends StatelessWidget {
               blurRadius: 20.0, // has the effect of softening the shadow
               spreadRadius: 3.0, // has the effect of extending the shadow
               offset: Offset(
-                5.0, // horizontal, move right 10
-                10.0, // vertical, move down 10
+                4.0, // horizontal, move right 10
+                8.0, // vertical, move down 10
               ),
             )
           ],
@@ -282,7 +306,7 @@ class ProfileMainWidget extends StatelessWidget {
             ],
           ),
           Divider(
-            color: Colors.blueGrey,
+            color: Colors.orange[200],
           ),
           Container(
             padding: EdgeInsets.only(top: 5),

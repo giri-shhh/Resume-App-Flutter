@@ -47,11 +47,22 @@ class Education extends StatelessWidget {
   _buildProfileHeaderWidget(List<String> details) {
     return Container(
       decoration: new BoxDecoration(
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey,
+              blurRadius: 8.0, // has the effect of softening the shadow
+              spreadRadius: 2.0, // has the effect of extending the shadow
+              offset: Offset(
+                2.0, // horizontal, move right 10
+                2.0, // vertical, move down 10
+              ),
+            )
+          ],
           gradient: new LinearGradient(
-              colors: <Color>[Colors.deepOrange[500], Colors.deepOrange[400]]),
+              colors: <Color>[Colors.deepOrange[400], Colors.deepOrange[300]]),
           borderRadius: new BorderRadius.all(Radius.circular(10))),
       height: 250,
-      margin: EdgeInsets.only(left: 20, right: 20, top: 20),
+      margin: EdgeInsets.only(left: 20, right: 20, top: 15, bottom: 10),
       child: Column(
         children: <Widget>[
           Column(
@@ -102,7 +113,7 @@ class Education extends StatelessWidget {
             ],
           ),
           Divider(
-            color: Colors.blueGrey,
+            color: Colors.orange[200],
           ),
           Container(
             padding: EdgeInsets.only(top: 5, left: 15),
